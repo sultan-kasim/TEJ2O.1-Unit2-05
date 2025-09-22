@@ -2,7 +2,7 @@
  *
  * Created by: Sultan
  * Created on: Sep 2025
- * This program gets the current temperature,in K.
+ * This program shows a smiley face.
 */
 
 basic.clearScreen()
