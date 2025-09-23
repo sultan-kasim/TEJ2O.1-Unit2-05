@@ -7,16 +7,14 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// When button A is pressed
+// When button A is presse
 input.onButtonPressed(Button.A, function () {
-    // show temperature every time A is pressed
-    let temperature: number = input.temperature()
-    let temperatureValueKelvin: number = Math.round(temperature + 273.15)
+// Temperture in K.
+    let temperature = input.temperature()
+    let temperatureValueKelvin = Math.round(temperature + 273.15)
 
     basic.clearScreen()
-    basic.showString('The temperature is: ' + temperatureValueKelvin.toString() + 'K')
-
-    basic.clearScreen()
-    basic.showIcon(IconNames.Happy)
+    basic.showString("The temperature is: " + temperatureValueKelvin + "K")
     basic.pause(1000)
+    basic.showIcon(IconNames.Happy)
 })
