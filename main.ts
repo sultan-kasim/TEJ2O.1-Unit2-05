@@ -13,7 +13,7 @@ input.onButtonPressed(Button.A, function () {
     let temperature = input.temperature()
     let temperatureValueKelvin = Math.round(temperature + 273.15)
     basic.clearScreen()
-    basic.showString("The temperature is: " + temperatureValueKelvin + "K")
+    basic.showString("The temperature is: " + temperatureValueKelvin + "Kelvin")
     basic.pause(1000)
     basic.showIcon(IconNames.Happy)
 })
