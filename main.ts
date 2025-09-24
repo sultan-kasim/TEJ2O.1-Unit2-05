@@ -7,9 +7,12 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// When button A is presse
+// When button A is pressed
 input.onButtonPressed(Button.A, function () {
 // Temperture in K.
+    let temperatureconst;
+    let temperatureValueKelvinconst;
+
     let temperature = input.temperature()
     let temperatureValueKelvin = Math.round(temperature + 273.15)
     basic.clearScreen()
