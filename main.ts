@@ -2,7 +2,7 @@
  *
  * Created by: Sultan
  * Created on: Sep 2025
- * This program shows a smiley face.
+ * This program shows temperature in kelvins.
 */
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
