@@ -7,16 +7,21 @@
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// When button A is pressed
-input.onButtonPressed(Button.A, function () {
-// Temperture in K.
-    let temperatureconst;
-    let temperatureValueKelvinconst;
+// Variables
+let temperature: number
+let temperatureValueKelvin: number
 
-    let temperature = input.temperature()
-    let temperatureValueKelvin = Math.round(temperature + 273.15)
+// When button A is pressed...
+input.onButtonPressed(Button.A, function () {
+
+    // Gets temperature value
+    temperature = input.temperature()
+    temperatureValueKelvin = Math.round(temperature + 273.15)
+
     basic.clearScreen()
-    basic.showString("The temperature is: " + temperatureValueKelvin + "Kelvin")
-    basic.pause(1000)
+    basic.showString('The temperature is' + temperatureValueKelvin.toString() + 'K')
+    basic.clearScreen()
     basic.showIcon(IconNames.Happy)
+    basic.pause(1000)
+
 })
